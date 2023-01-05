@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="ParallellTestWithDocker">
+  <test thread-count="5" parallel="classes" name="ChromeTest">
+  <classes>
+  
+    <class name ="com.sdet.sdetPractise.docker.RemoteGridWithDocker1"/>
+<!--    <class name ="com.sdet.sdetPractise.docker.RemoteGridWithDocker2"/>-->
+<!--    <class name ="com.sdet.sdetPractise.docker.RemoteGridWithDocker3"/>-->
+  
+  </classes>
+  
+  
+  </test> <!-- ChromeTest -->
+</suite> <!-- ParallellTestWithDocker -->

@@ -1,0 +1,97 @@
+Attaching to sdetpractise-chrome-1, selenium-hub
+selenium-hub           | 2023-01-04 08:40:56,426 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
+selenium-hub           | 2023-01-04 08:40:56,445 INFO RPC interface 'supervisor' initialized
+selenium-hub           | 2023-01-04 08:40:56,445 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+selenium-hub           | 2023-01-04 08:40:56,445 INFO supervisord started with pid 8
+sdetpractise-chrome-1  | 2023-01-04 08:40:56,918 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+sdetpractise-chrome-1  | 2023-01-04 08:40:56,935 INFO RPC interface 'supervisor' initialized
+sdetpractise-chrome-1  | 2023-01-04 08:40:56,935 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+sdetpractise-chrome-1  | 2023-01-04 08:40:56,936 INFO supervisord started with pid 8
+selenium-hub           | 2023-01-04 08:40:57,456 INFO spawned: 'selenium-grid-hub' with pid 9
+selenium-hub           | Tracing is disabled
+selenium-hub           | 2023-01-04 08:40:57,471 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+sdetpractise-chrome-1  | 2023-01-04 08:40:57,944 INFO spawned: 'xvfb' with pid 9
+sdetpractise-chrome-1  | 2023-01-04 08:40:57,954 INFO spawned: 'vnc' with pid 10
+sdetpractise-chrome-1  | 2023-01-04 08:40:57,962 INFO spawned: 'novnc' with pid 13
+sdetpractise-chrome-1  | 2023-01-04 08:40:57,988 INFO spawned: 'selenium-node' with pid 15
+sdetpractise-chrome-1  | 2023-01-04 08:40:58,053 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+sdetpractise-chrome-1  | Generating Selenium Config
+sdetpractise-chrome-1  | Configuring server...
+sdetpractise-chrome-1  | Setting up SE_NODE_HOST...
+sdetpractise-chrome-1  | Setting up SE_NODE_PORT...
+sdetpractise-chrome-1  | Setting up SE_NODE_GRID_URL...
+sdetpractise-chrome-1  | find: '/home/seluser/.config/chromium/Crash Reports/pending/': No such file or directory
+sdetpractise-chrome-1  | 2023-01-04 08:40:59,094 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+sdetpractise-chrome-1  | 2023-01-04 08:40:59,094 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+sdetpractise-chrome-1  | 2023-01-04 08:40:59,094 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+sdetpractise-chrome-1  | Tracing is disabled
+sdetpractise-chrome-1  | Selenium Grid Node configuration: 
+sdetpractise-chrome-1  | [events]
+sdetpractise-chrome-1  | publish = "tcp://selenium-hub:4442"
+sdetpractise-chrome-1  | subscribe = "tcp://selenium-hub:4443"
+sdetpractise-chrome-1  | 
+sdetpractise-chrome-1  | [node]
+sdetpractise-chrome-1  | session-timeout = "300"
+sdetpractise-chrome-1  | override-max-sessions = false
+sdetpractise-chrome-1  | detect-drivers = false
+sdetpractise-chrome-1  | drain-after-session-count = 0
+sdetpractise-chrome-1  | max-sessions = 1
+sdetpractise-chrome-1  | 
+sdetpractise-chrome-1  | [[node.driver-configuration]]
+sdetpractise-chrome-1  | display-name = "chrome"
+sdetpractise-chrome-1  | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+sdetpractise-chrome-1  | max-sessions = 1
+sdetpractise-chrome-1  | 
+sdetpractise-chrome-1  | Starting Selenium Grid Node...
+selenium-hub           | 08:40:59.743 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+selenium-hub           | 08:40:59.757 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+selenium-hub           | 08:40:59.926 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://192.168.144.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://192.168.144.2:4443]
+selenium-hub           | 08:41:00.056 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://192.168.144.2:4442 and tcp://192.168.144.2:4443
+selenium-hub           | 08:41:00.100 INFO [UnboundZmqEventBus.<init>] - Sockets created
+sdetpractise-chrome-1  | 08:41:00.425 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+sdetpractise-chrome-1  | 08:41:00.436 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+sdetpractise-chrome-1  | 08:41:00.609 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+sdetpractise-chrome-1  | 08:41:00.695 INFO [UnboundZmqEventBus.<init>] - Sockets created
+selenium-hub           | 08:41:01.107 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+sdetpractise-chrome-1  | 08:41:01.700 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+selenium-hub           | 08:41:01.756 INFO [Hub.execute] - Started Selenium Hub 4.7.2 (revision 4d4020c3b7): http://192.168.144.2:4444
+sdetpractise-chrome-1  | 08:41:01.804 INFO [NodeServer.createHandlers] - Reporting self as: http://192.168.144.3:5555
+sdetpractise-chrome-1  | 08:41:01.823 INFO [NodeOptions.getSessionFactories] - Detected 4 available processors
+sdetpractise-chrome-1  | 08:41:01.859 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+sdetpractise-chrome-1  | 08:41:01.872 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+sdetpractise-chrome-1  | 08:41:02.152 INFO [NodeServer$1.start] - Starting registration process for Node http://192.168.144.3:5555
+sdetpractise-chrome-1  | 08:41:02.153 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://192.168.144.3:5555
+sdetpractise-chrome-1  | 08:41:02.165 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub           | 08:41:02.224 INFO [Node.<init>] - Binding additional locator mechanisms: id, name, relative
+selenium-hub           | 08:41:02.749 INFO [GridModel.setAvailability] - Switching Node 6de40bf0-c2a3-4ce5-a305-32ca7211c1dc (uri: http://192.168.144.3:5555) from DOWN to UP
+selenium-hub           | 08:41:02.750 INFO [LocalDistributor.add] - Added node 6de40bf0-c2a3-4ce5-a305-32ca7211c1dc at http://192.168.144.3:5555. Health check every 120s
+sdetpractise-chrome-1  | 08:41:02.756 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+selenium-hub           | 08:41:19.404 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub           |  [Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]
+sdetpractise-chrome-1  | Starting ChromeDriver 108.0.5359.124 (603c1cb86aff29563721da2a6351c0d08865350d-refs/branch-heads/5359@{#1179}) on port 18973
+sdetpractise-chrome-1  | Only local connections are allowed.
+sdetpractise-chrome-1  | Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+sdetpractise-chrome-1  | [1672821679.638][SEVERE]: bind() failed: Cannot assign requested address (99)
+sdetpractise-chrome-1  | ChromeDriver was started successfully.
+sdetpractise-chrome-1  | 08:41:21.480 INFO [LocalNode.newSession] - Session created by the Node. Id: cb50c524cd92f1ce5ea79cb1b631447d, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.124 (603c1cb86af..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:35537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: http://localhost:35537, se:cdpVersion: 108.0.5359.124, se:vncEnabled: true, se:vncLocalAddress: ws://192.168.144.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+selenium-hub           | 08:41:21.504 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: cb50c524cd92f1ce5ea79cb1b631447d 
+selenium-hub           |  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.124 (603c1cb86af..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:35537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: {}, se:bidiEnabled: false, se:cdp: ws://192.168.144.3:4444/ses..., se:cdpVersion: 108.0.5359.124, se:vnc: ws://192.168.144.3:4444/ses..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.144.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+sdetpractise-chrome-1  | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+sdetpractise-chrome-1  | 2023-01-04 08:41:50,601 WARN received SIGTERM indicating exit request
+sdetpractise-chrome-1  | 2023-01-04 08:41:50,647 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+sdetpractise-chrome-1  | 08:41:50.726 INFO [LocalNode.stopAllSessions] - Trying to stop all running sessions before shutting down...
+sdetpractise-chrome-1  | 2023-01-04 08:41:50,746 INFO stopped: selenium-node (terminated by SIGTERM)
+selenium-hub           | 08:41:50.832 INFO [GridModel.release] - Releasing slot for session id cb50c524cd92f1ce5ea79cb1b631447d
+selenium-hub           | 08:41:50.833 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: cb50c524cd92f1ce5ea79cb1b631447d
+sdetpractise-chrome-1  | 2023-01-04 08:41:51,750 INFO stopped: novnc (terminated by SIGTERM)
+sdetpractise-chrome-1  | 2023-01-04 08:41:52,756 INFO stopped: vnc (terminated by SIGTERM)
+sdetpractise-chrome-1  | 2023-01-04 08:41:53,761 INFO stopped: xvfb (terminated by SIGTERM)
+sdetpractise-chrome-1  | Shutdown complete
+sdetpractise-chrome-1 exited with code 143
+sdetpractise-chrome-1 exited with code 0
+selenium-hub           | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+selenium-hub           | 2023-01-04 08:41:54,850 WARN received SIGTERM indicating exit request
+selenium-hub           | 2023-01-04 08:41:54,854 INFO waiting for selenium-grid-hub to die
+selenium-hub           | 2023-01-04 08:41:55,857 INFO stopped: selenium-grid-hub (terminated by SIGTERM)
+selenium-hub           | Shutdown complete
+selenium-hub exited with code 143
