@@ -1,45 +1,46 @@
-pipeline
+pipeline {
 
-agent any
+	agent any
 
-stages 
+		stages
 
-{
-	
-stage('Build')
+			{
 
-steps
+				stage('Build')
 
-{
-	
-echo "Build step from pipeline"
+				steps
 
-}
+					{
 
-stage('Deploy')
+					echo "Build step from pipeline"
 
-steps
-{
-	
-echo "Deploy step from pipeline"
+					}
 
-}
+				stage('Deploy')
 
-stage('Test')
+				steps
+				{
 
-{
-	
-scho "Test from pipeline"
+				echo "Deploy step from pipeline"
 
-}
+				}
 
-stage('Release')
+				stage('Test')
 
-{
-	
-echo "Release from pipeline"
-	
-}
+				{
+
+				scho "Test from pipeline"
+
+				}
+
+				stage('Release')
+
+				{
+
+				echo "Release from pipeline"
+
+				}
 
 
+		}
 }
