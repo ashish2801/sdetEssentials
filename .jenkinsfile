@@ -6,39 +6,45 @@ pipeline {
 
 			{
 
-				stage('Build')
+				stage('Build'){
 
-				steps
+					steps
+						{
 
+						echo "Build step from pipeline"
+
+						}
+				}
+
+				stage('Deploy'){
+
+					steps
 					{
 
-					echo "Build step from pipeline"
+					echo "Deploy step from pipeline"
+
+					}
+				}
+
+				stage('Test'){
+
+
+					steps{
+
+					scho "Test from pipeline"
 
 					}
 
-				stage('Deploy')
+				}
+
+				stage('Release'){
 
 				steps
-				{
+					{
 
-				echo "Deploy step from pipeline"
+					echo "Release from pipeline"
 
-				}
-
-				stage('Test')
-
-				{
-
-				scho "Test from pipeline"
-
-				}
-
-				stage('Release')
-
-				{
-
-				echo "Release from pipeline"
-
+					}
 				}
 
 
