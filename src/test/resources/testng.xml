@@ -3,8 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/ashishk/eclipse-workspace/sdetPractise">
         <classes>
-            <class name="com.sdet.sdetPractise.docker.RemoteGridWithDocker1">
-                <methods><include name="test1"/></methods>
+            <class name="com.sdet.sdetPractise.docker.RemoteGridWithDocker1Test">
             </class>
         </classes>
     </test>

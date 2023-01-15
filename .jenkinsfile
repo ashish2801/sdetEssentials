@@ -1,0 +1,45 @@
+pipeline
+
+agent any
+
+stages 
+
+{
+	
+stage('Build')
+
+steps
+
+{
+	
+echo "Build step from pipeline"
+
+}
+
+stage('Deploy')
+
+steps
+{
+	
+echo "Deploy step from pipeline"
+
+}
+
+stage('Test')
+
+{
+	
+scho "Test from pipeline"
+
+}
+
+stage('Release')
+
+{
+	
+echo "Release from pipeline"
+	
+}
+
+
+}
